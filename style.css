@@ -11,10 +11,12 @@ header {
     background-color: pink;
     color: black;
     padding: 1em 0;
+    font-family: 'Damion', cursive; /* Always use Damion font for the header */
 }
 
 nav {
     margin-top: 20px;
+    font-family: 'Damion', cursive; /* Ensure Damion is used in the navigation */
 }
 
 nav a {
@@ -50,7 +52,7 @@ main {
 footer {
     background-color: pink;
     color: black;
-    padding: 1em 0;
+    padding: 0.5em 0; /* Reduced the footer height */
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -61,3 +63,4 @@ footer a {
     font-size: 1.5em;
     text-decoration: none;
 }
+
