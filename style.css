@@ -1,0 +1,76 @@
+/* Importing the DailyBubble font */
+@font-face {
+    font-family: 'DailyBubble';
+    src: url('fonts/DailyBubble.woff2') format('woff2'),
+         url('fonts/DailyBubble.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'DailyBubble', Arial, sans-serif; /* Default to DailyBubble font */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    color: pink;
+}
+
+/* Header Styling */
+header {
+    background-color: pink;
+    color: black;
+    padding: 1em 0;
+}
+
+/* Navigation Bar Styling */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+/* Main Section Styling */
+main {
+    padding: 2em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: pink;
+    color: black;
+    padding: 1em 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Instagram Link in Footer */
+footer a {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/* Instagram Icon Style */
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Ensuring the footer stays at the bottom */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
