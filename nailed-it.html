@@ -12,6 +12,9 @@
             text-align: center;
             background-color: black;
             color: pink;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: pink;
@@ -29,24 +32,16 @@
         }
         main {
             padding: 2em;
-        }
-        .testimonial {
-            margin: 20px;
-            padding: 15px;
-            border: 1px solid pink;
-            background-color: black;
-            color: pink;
-            text-align: left;
-            display: inline-block;
-            width: 80%;
+            flex-grow: 1;
         }
         footer {
             background-color: pink;
             color: black;
             padding: 1em 0;
-            position: absolute;
-            width: 100%;
+            position: relative;
             bottom: 0;
+            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
@@ -64,28 +59,20 @@
     <main>
         <h2>What Our Clients Are Saying</h2>
         
-        <div class="testimonial">
-            <h3>Jane D.</h3>
-            <p>"I love PhoenixNailedIt! The service was excellent, and my nails looked amazing. I will definitely be coming back for more!"</p>
-        </div>
+        <p><strong>“Absolutely loved my nails! The attention to detail is amazing. Highly recommend!”</strong></p>
+        <p>- Sarah T.</p>
+        
+        <p><strong>“Best nail artist I’ve ever had. The designs were exactly what I wanted and more!”</strong></p>
+        <p>- Emily G.</p>
 
-        <div class="testimonial">
-            <h3>Emily R.</h3>
-            <p>"Best manicure I've had in a while! The attention to detail was incredible, and the atmosphere was so welcoming. Highly recommend!"</p>
-        </div>
-
-        <div class="testimonial">
-            <h3>Jessica T.</h3>
-            <p>"I came for an acrylic set and was blown away by the designs. My nails have never looked better. Thank you, PhoenixNailedIt!"</p>
-        </div>
-
-        <div class="testimonial">
-            <h3>Amy L.</h3>
-            <p>"Super friendly and professional! I love how my nails turned out. Can't wait to book my next appointment."</p>
-        </div>
+        <p><strong>“I’m obsessed with my nails! So cute and unique. Definitely coming back!”</strong></p>
+        <p>- Jasmine P.</p>
     </main>
     <footer>
         <p>&copy; 2025 PhoenixNailedIt</p>
+        <a href="https://www.instagram.com/phoenixnailedit_/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
     </footer>
 </body>
 </html>

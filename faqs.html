@@ -12,6 +12,9 @@
             text-align: center;
             background-color: black;
             color: pink;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: pink;
@@ -29,24 +32,16 @@
         }
         main {
             padding: 2em;
-        }
-        .faq {
-            margin: 20px;
-            padding: 15px;
-            border: 1px solid pink;
-            background-color: black;
-            color: pink;
-            text-align: left;
-            display: inline-block;
-            width: 80%;
+            flex-grow: 1;
         }
         footer {
             background-color: pink;
             color: black;
             padding: 1em 0;
-            position: absolute;
-            width: 100%;
+            position: relative;
             bottom: 0;
+            width: 100%;
+            text-align: center;
         }
     </style>
 </head>
@@ -62,35 +57,22 @@
         </nav>
     </header>
     <main>
-        <h2>FAQs & Rules</h2>
+        <h2>Frequently Asked Questions & Rules</h2>
+        <h3>What types of payments do you accept?</h3>
+        <p>We accept credit/debit cards, cash, and payments via PayPal.</p>
         
-        <div class="faq">
-            <h3>What is your cancellation policy?</h3>
-            <p>Cancellations must be made at least 24 hours in advance to avoid a cancellation fee. Please reach out to us via email or phone to cancel.</p>
-        </div>
+        <h3>What is your cancellation policy?</h3>
+        <p>If you need to cancel, please give at least 24 hours' notice to avoid a cancellation fee.</p>
 
-        <div class="faq">
-            <h3>Do you offer walk-ins?</h3>
-            <p>We currently only accept appointments made in advance through our booking system. Please use the "Book Now" button to schedule your appointment.</p>
-        </div>
-
-        <div class="faq">
-            <h3>What should I do before my appointment?</h3>
-            <p>Please arrive with clean, dry nails. If you're coming for a manicure or acrylics, make sure your nails are free of old polish and in good condition.</p>
-        </div>
-
-        <div class="faq">
-            <h3>What is your policy on late arrivals?</h3>
-            <p>If you arrive late, we may need to shorten the length of your service to accommodate other appointments. Please try to arrive on time for your appointment!</p>
-        </div>
-
-        <div class="faq">
-            <h3>Can I bring my own nail designs?</h3>
-            <p>Absolutely! Feel free to bring inspiration pictures or your own nail design ideas. We love creating custom nail art!</p>
-        </div>
+        <h3>Do you offer gift cards?</h3>
+        <p>Yes, gift cards are available for purchase. Contact us to get one!</p>
     </main>
     <footer>
         <p>&copy; 2025 PhoenixNailedIt</p>
+        <a href="https://www.instagram.com/phoenixnailedit_/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" style="width: 30px; height: 30px;">
+        </a>
     </footer>
 </body>
 </html>
+
