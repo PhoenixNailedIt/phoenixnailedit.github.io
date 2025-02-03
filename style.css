@@ -1,3 +1,4 @@
+/* General Page Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,12 +12,10 @@ header {
     background-color: pink;
     color: black;
     padding: 1em 0;
-    font-family: 'Damion', cursive; /* Always use Damion font for the header */
 }
 
 nav {
     margin-top: 20px;
-    font-family: 'Damion', cursive; /* Ensure Damion is used in the navigation */
 }
 
 nav a {
@@ -26,37 +25,21 @@ nav a {
     margin: 0 20px;
 }
 
-main {
-    padding: 2em;
-}
-
-.service {
-    margin-bottom: 20px;
-}
-
-.service-button {
-    display: block;
-    background-color: pink;
-    color: black;
-    padding: 15px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.service-button:hover {
-    background-color: #ff66b2; /* Lighter pink on hover */
-}
-
+/* Footer Styles */
 footer {
-    background-color: pink;
+    background-color: pink; /* Ensures the footer has a pink background */
     color: black;
     padding: 0.5em 0; /* Reduced the footer height */
     position: relative;
     width: 100%;
     bottom: 0;
     font-family: 'Damion', cursive;
+    text-align: center; /* Ensures text is centered */
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
 }
 
 footer a {
@@ -66,27 +49,79 @@ footer a {
 }
 
 /* Add the Hello Kitty image to the bottom-left corner of the footer */
-footer {
-    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fhello-kitty-wall-decal-sticker-sanrio-png-clipart-adventures-of-hello-kitty-friends-advertising-an--332633122481676155%2F&psig=AOvVaw1MFK27VhAwbGwMzHWsaKO_&ust=1738678302061000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjU6sTXp4sDFQAAAAAdAAAAABAE') no-repeat left bottom;
+footer::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fhello-kitty-wall-decal-sticker-sanrio-png-clipart-adventures-of-hello-kitty-friends-advertising-an--332633122481676155%2F&psig=AOvVaw1MFK27VhAwbGwMzHWsaKO_&ust=1738678302061000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjU6sTXp4sDFQAAAAAdAAAAABAE') no-repeat;
     background-size: 40px 40px; /* Adjust size as needed */
+    width: 40px;
+    height: 40px;
 }
 
-/* Adjust text alignment and size */
-footer p {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-footer a {
-    color: black;
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
-/* Styling for Instagram button */
+/* Instagram button */
 footer a img {
     width: 30px;
     height: 30px;
+}
+
+/* My Services Page Button Styles */
+button {
+    background-color: pink;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Damion', cursive; /* Use 'Damion' font for the buttons */
+}
+
+button:hover {
+    background-color: black;
+    color: pink;
+}
+
+/* Styling for the Book Now Page Buttons */
+button {
+    background-color: pink;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Damion', cursive;
+}
+
+button:hover {
+    background-color: black;
+    color: pink;
+}
+
+/* Navigation Bar Styles */
+nav {
+    margin-top: 20px;
+    font-family: 'Damion', cursive; /* Ensures 'Damion' font is used */
+}
+
+nav a {
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+/* General Styles for Links */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
