@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book an Appointment | PhoenixNailedIt</title>
+    <title>Book Now | PhoenixNailedIt</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,43 +12,55 @@
             text-align: center;
             background-color: black;
             color: pink;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
         header {
             background-color: pink;
             color: black;
             padding: 1em 0;
         }
-        main {
-            flex: 1;
-            padding: 20px;
-        }
-        #Setmore_button_iframe img {
-            width: 200px; /* Adjust the size of the button */
+        nav {
             margin-top: 20px;
+        }
+        nav a {
+            color: black;
+            font-size: 1.2em;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        main {
+            padding: 2em;
+        }
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
         }
         footer {
             background-color: pink;
             color: black;
             padding: 1em 0;
-            text-align: center;
-            margin-top: auto;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Book an Appointment</h1>
+        <h1>PhoenixNailedIt</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="my-services.html">My Services</a>
+            <a href="bookings.html">Book Now</a>
+        </nav>
     </header>
     <main>
-        <h2>Schedule Your Nail Appointment</h2>
-        <!-- Setmore Booking Embed -->
-        <script id="setmore_script" type="text/javascript" src="https://assets.setmore.com/integration/static/setmoreIframeLive.js"></script>
-        <a id="Setmore_button_iframe" href="https://booking.setmore.com/scheduleappointment/cb4a4d07-170b-497b-92f8-cbcde4af3e89">
-            <img border="none" src="https://assets.setmore.com/setmore/images/2.0/Settings/book-now-black.svg" alt="Book an appointment with PhoenixNailedIt using Setmore"/>
-        </a>
+        <h2>Book Your Appointment</h2>
+        
+        <!-- Embed Setmore Booking Calendar -->
+        <iframe src="https://booking.setmore.com/widget/cb4a4d07-170b-497b-92f8-cbcde4af3e89" 
+                style="width: 100%; height: 800px; border: none;">
+        </iframe>
     </main>
     <footer>
         <p>&copy; 2025 PhoenixNailedIt</p>
