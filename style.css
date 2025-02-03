@@ -1,15 +1,13 @@
-/* Importing the DailyBubble font */
 @font-face {
     font-family: 'DailyBubble';
     src: url('fonts/DailyBubble.woff2') format('woff2'),
-         url('fonts/DailyBubble.ttf') format('truetype');
+         url('fonts/DailyBubble.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-/* General Body Styling */
 body {
-    font-family: 'DailyBubble', Arial, sans-serif; /* Default to DailyBubble font */
+    font-family: 'DailyBubble', Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -17,14 +15,12 @@ body {
     color: pink;
 }
 
-/* Header Styling */
 header {
     background-color: pink;
     color: black;
     padding: 1em 0;
 }
 
-/* Navigation Bar Styling */
 nav {
     margin-top: 20px;
 }
@@ -36,12 +32,16 @@ nav a {
     margin: 0 20px;
 }
 
-/* Main Section Styling */
 main {
     padding: 2em;
 }
 
-/* Footer Styling */
+iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+}
+
 footer {
     background-color: pink;
     color: black;
@@ -51,26 +51,85 @@ footer {
     bottom: 0;
 }
 
-/* Instagram Link in Footer */
 footer a {
     color: black;
     font-size: 1.5em;
     text-decoration: none;
 }
 
-/* Instagram Icon Style */
-footer img {
+.service {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid pink;
+    display: inline-block;
+    cursor: pointer;
+    background-color: black;
+    color: pink;
+}
+
+.service:hover {
+    background-color: pink;
+    color: black;
+}
+
+button {
+    background-color: pink;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+    color: pink;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.about {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: pink;
+    color: black;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.service-list .service {
+    background-color: black;
+    color: pink;
+    transition: transform 0.3s ease;
+}
+
+.service-list .service:hover {
+    transform: scale(1.05);
+}
+
+header img {
     width: 30px;
     height: 30px;
+    vertical-align: middle;
 }
 
-/* Ensuring the footer stays at the bottom */
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1;
-}
