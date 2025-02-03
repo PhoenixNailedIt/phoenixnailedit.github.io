@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoenixNailedIt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: black;
+            color: pink;
+        }
+        header {
+            background-color: pink;
+            color: black;
+            padding: 1em 0;
+        }
+        main {
+            padding: 2em;
+        }
+        .service {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid pink;
+            display: inline-block;
+            cursor: pointer;
+            background-color: black;
+            color: pink;
+        }
+        footer {
+            background-color: pink;
+            color: black;
+            padding: 1em 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .about {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: pink;
+            color: black;
+        }
+    </style>
+    <script>
+        function bookService(service) {
+            window.location.href = 'booking.html?service=' + encodeURIComponent(service);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>PhoenixNailedIt</h1>
+    </header>
+    <main>
+        <h2>Our Services</h2>
+        <div class="service" onclick="bookService('Manicure')">Manicure</div>
+        <div class="service" onclick="bookService('Pedicure')">Pedicure</div>
+        <div class="service" onclick="bookService('Acrylic Nails')">Acrylic Nails</div>
+        
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Welcome to PhoenixNailedIt! I am passionate about nail art and dedicated to providing top-notch nail care services. Come get pampered and leave with nails that make a statement!</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 PhoenixNailedIt</p>
+    </footer>
+</body>
+</html>
