@@ -1,13 +1,19 @@
-/* General Page Styles */
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
     background-color: black;
     color: pink;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Header and Navigation */
 header {
     background-color: pink;
     color: black;
@@ -16,6 +22,7 @@ header {
 
 nav {
     margin-top: 20px;
+    font-family: 'Damion', cursive;  /* Damion font for the nav */
 }
 
 nav a {
@@ -25,16 +32,43 @@ nav a {
     margin: 0 20px;
 }
 
-/* Footer Styles */
-footer {
-    background-color: pink; /* Ensures the footer has a pink background */
+/* Main Content */
+main {
+    padding: 2em;
+    flex: 1;  /* Allows main to expand so footer stays at the bottom */
+}
+
+/* My Services Page – Service Button Styling */
+.service {
+    margin-bottom: 20px;
+}
+
+.service-button {
+    display: block;
+    background-color: pink;
     color: black;
-    padding: 0.5em 0; /* Reduced the footer height */
+    padding: 15px;
+    margin: 10px auto; /* centers the button */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: fit-content;
+    font-family: 'Damion', cursive; /* Use Damion font for the buttons */
+}
+
+.service-button:hover {
+    background-color: #ff66b2; /* Lighter pink on hover */
+}
+
+/* Footer */
+footer {
+    background-color: pink; /* Keeps the footer pink */
+    color: black;
+    padding: 0.5em 0;  /* Reduced footer height */
     position: relative;
     width: 100%;
-    bottom: 0;
     font-family: 'Damion', cursive;
-    text-align: center; /* Ensures text is centered */
+    text-align: center;
 }
 
 footer p {
@@ -44,84 +78,27 @@ footer p {
 
 footer a {
     color: black;
-    font-size: 1.5em;
     text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
 }
 
-/* Add the Hello Kitty image to the bottom-left corner of the footer */
+/* Instagram Button Image in Footer */
+footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Hello Kitty Image in Footer using a Pseudo-Element */
 footer::after {
     content: '';
     position: absolute;
     bottom: 10px;
     left: 10px;
     background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fhello-kitty-wall-decal-sticker-sanrio-png-clipart-adventures-of-hello-kitty-friends-advertising-an--332633122481676155%2F&psig=AOvVaw1MFK27VhAwbGwMzHWsaKO_&ust=1738678302061000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjU6sTXp4sDFQAAAAAdAAAAABAE') no-repeat;
-    background-size: 40px 40px; /* Adjust size as needed */
+    background-size: 40px 40px;
     width: 40px;
     height: 40px;
 }
 
-/* Instagram button */
-footer a img {
-    width: 30px;
-    height: 30px;
-}
-
-/* My Services Page Button Styles */
-button {
-    background-color: pink;
-    color: black;
-    border: 2px solid black;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: 'Damion', cursive; /* Use 'Damion' font for the buttons */
-}
-
-button:hover {
-    background-color: black;
-    color: pink;
-}
-
-/* Styling for the Book Now Page Buttons */
-button {
-    background-color: pink;
-    color: black;
-    border: 2px solid black;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 1.2em;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: 'Damion', cursive;
-}
-
-button:hover {
-    background-color: black;
-    color: pink;
-}
-
-/* Navigation Bar Styles */
-nav {
-    margin-top: 20px;
-    font-family: 'Damion', cursive; /* Ensures 'Damion' font is used */
-}
-
-nav a {
-    color: black;
-    font-size: 1.2em;
-    text-decoration: none;
-    margin: 0 20px;
-}
-
-/* General Styles for Links */
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 
