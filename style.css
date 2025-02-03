@@ -1,12 +1,7 @@
-@font-face {
-    font-family: 'DailyBubble';
-    src: url('https://phoenixnailedit.github.io/fonts/DailyBubble.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Daimon&display=swap');
 
 body {
-    font-family: 'DailyBubble', sans-serif;
+    font-family: 'Daimon', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -56,3 +51,7 @@ footer a {
     text-decoration: none;
 }
 
+footer img {
+    width: 30px;
+    height: 30px;
+}
