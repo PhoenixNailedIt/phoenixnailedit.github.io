@@ -3,43 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Services - PhoenixNailedIt</title>
+    <title>My Services | PhoenixNailedIt</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: black;
-            color: pink;
             margin: 0;
             padding: 0;
+            text-align: center;
+            background-color: black;
+            color: pink;
         }
         header {
             background-color: pink;
             color: black;
             padding: 1em 0;
-            text-align: center;
         }
-        .service-list {
-            padding: 2em;
-            text-align: left;
+        nav {
+            margin-top: 10px;
         }
-        .service {
-            background-color: black;
-            border: 1px solid pink;
-            padding: 15px;
-            margin-bottom: 20px;
+        nav a {
+            color: black;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
             color: pink;
         }
-        .service h3 {
-            margin-top: 0;
+        main {
+            padding: 2em;
         }
-        .book-button {
-            background-color: pink;
-            color: black;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 10px;
+        .service {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid pink;
+            display: inline-block;
+            background-color: black;
+            color: pink;
         }
         footer {
             background-color: pink;
@@ -48,96 +49,68 @@
             position: absolute;
             width: 100%;
             bottom: 0;
-            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>PhoenixNailedIt - My Services</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="my-services.html">My Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
-    <div class="service-list">
+    <main>
+        <h2>Our Services</h2>
         <div class="service">
             <h3>Manicure</h3>
-            <p>A manicure is something simple being done to your natural nails. Designs etc. is $5 added on to your total <3.</p>
-            <p><strong>Price:</strong> $20.00</p>
-            <p><strong>Duration:</strong> 45 mins</p>
-            <button class="book-button" onclick="bookService('Manicure')">Book Now</button>
+            <p>A manicure is something simple being done to your natural nails. Designs etc is $5 added on to your total <3.</p>
+            <p><strong>$20.00</strong><br>45 mins</p>
         </div>
-
         <div class="service">
             <h3>Long Freestyle Set</h3>
             <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before. Inspiration pictures can be used as well for reference <3.</p>
-            <p><strong>Price:</strong> $50.00</p>
-            <p><strong>Duration:</strong> 1 hr 45 mins</p>
-            <button class="book-button" onclick="bookService('Long Freestyle Set')">Book Now</button>
+            <p><strong>$50.00</strong><br>1 hr 45 mins</p>
         </div>
-
         <div class="service">
             <h3>Medium Freestyle Set</h3>
             <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before. Inspiration pictures can be used as well for reference <3.</p>
-            <p><strong>Price:</strong> $45.00</p>
-            <p><strong>Duration:</strong> 1 hr 30 mins</p>
-            <button class="book-button" onclick="bookService('Medium Freestyle Set')">Book Now</button>
+            <p><strong>$45.00</strong><br>1 hr 30 mins</p>
         </div>
-
         <div class="service">
-            <h3>XL Acrylic Set / Gel Set</h3>
-            <p>This XL acrylic set is perfect if you want a classy & cute look 🎀. Please be aware that these nails are very long, therefore they will take longer. Any charms added on will be $5 each which will add onto your final total <3.</p>
-            <p><strong>Price:</strong> $50.00</p>
-            <p><strong>Duration:</strong> 2 hrs</p>
-            <button class="book-button" onclick="bookService('XL Acrylic Set / Gel Set')">Book Now</button>
+            <h3>XL Acrylic/Gel Set</h3>
+            <p>This XL acrylic set is perfect if you want a classy & cute look🎀. Please be aware that these nails are very long therefore they will take longer. Any charms added on will be $5 each which will add onto your final total <3.</p>
+            <p><strong>$50.00</strong><br>2 hrs</p>
         </div>
-
         <div class="service">
             <h3>XL Freestyle Set</h3>
             <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before. Inspiration pictures can be used as well for reference <3.</p>
-            <p><strong>Price:</strong> $55.00</p>
-            <p><strong>Duration:</strong> 2 hrs</p>
-            <button class="book-button" onclick="bookService('XL Freestyle Set')">Book Now</button>
+            <p><strong>$55.00</strong><br>2 hrs</p>
         </div>
-
         <div class="service">
             <h3>Short Freestyle Set</h3>
-            <p>This freestyle set gives me the opportunity to try new ideas on your nails and have full creative control, especially if you want something cute, simple, and classy <3. Inspiration pictures can be used as well for reference <3.</p>
-            <p><strong>Price:</strong> $40.00</p>
-            <p><strong>Duration:</strong> 1 hr 30 mins</p>
-            <button class="book-button" onclick="bookService('Short Freestyle Set')">Book Now</button>
+            <p>This freestyle set gives me the opportunity to try new ideas on your nails and have full creative control especially if you want something cute, simple, and classy <3. Inspiration pictures can be used as well for reference <3.</p>
+            <p><strong>$40.00</strong><br>1 hr 30 mins</p>
         </div>
-
         <div class="service">
-            <h3>Medium Acrylic / Gel X Set</h3>
-            <p>This medium acrylic set is perfect if you want a classy & cute look 🎀. Any charms added on will be $5 each which will add onto your final total <3.</p>
-            <p><strong>Price:</strong> $25.00</p>
-            <p><strong>Duration:</strong> 1 hr 30 mins</p>
-            <button class="book-button" onclick="bookService('Medium Acrylic / Gel X Set')">Book Now</button>
+            <h3>Medium Acrylic/Gel X Set</h3>
+            <p>This medium acrylic set is perfect if you want a classy & cute look🎀. Any charms added on will be $5 each which will add onto your final total <3.</p>
+            <p><strong>$25.00</strong><br>1 hr 30 mins</p>
         </div>
-
         <div class="service">
-            <h3>Short Acrylic / Gel Set</h3>
-            <p>This short acrylic set is perfect if you want a classy & cute look 🎀. Any charms added on will be $5 each which will add onto your final total <3.</p>
-            <p><strong>Price:</strong> $20.00</p>
-            <p><strong>Duration:</strong> 1 hr 30 mins</p>
-            <button class="book-button" onclick="bookService('Short Acrylic / Gel Set')">Book Now</button>
+            <h3>Short Acrylic/Gel Set</h3>
+            <p>This short acrylic set is perfect if you want a classy & cute look🎀. Any charms added on will be $5 each which will add onto your final total <3.</p>
+            <p><strong>$20.00</strong><br>1 hr 30 mins</p>
         </div>
-
         <div class="service">
-            <h3>Long Acrylic / Gel X Set</h3>
+            <h3>Long Acrylic/Gel X Set</h3>
             <p>Any charms added on will be $5 each which will add onto your final total <3.</p>
-            <p><strong>Price:</strong> $35.00</p>
-            <p><strong>Duration:</strong> 1 hr 30 mins</p>
-            <button class="book-button" onclick="bookService('Long Acrylic / Gel X Set')">Book Now</button>
+            <p><strong>$35.00</strong><br>1 hr 30 mins</p>
         </div>
-    </div>
-
+    </main>
     <footer>
         <p>&copy; 2025 PhoenixNailedIt</p>
     </footer>
-
-    <script>
-        function bookService(service) {
-            window.location.href = 'booking.html?service=' + encodeURIComponent(service);
-        }
-    </script>
 </body>
 </html>
