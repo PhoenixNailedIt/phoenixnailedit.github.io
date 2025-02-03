@@ -4,61 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Services | PhoenixNailedIt</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: black;
-            color: pink;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: pink;
-            color: black;
-            padding: 1em 0;
-        }
-        nav {
-            margin-top: 20px;
-        }
-        nav a {
-            color: black;
-            font-size: 1.2em;
-            text-decoration: none;
-            margin: 0 20px;
-        }
-        main {
-            padding: 2em;
-            flex-grow: 1;
-        }
-        .service {
-            margin: 20px;
-            padding: 15px;
-            border: 1px solid pink;
-            display: inline-block;
-            cursor: pointer;
-            background-color: black;
-            color: pink;
-        }
-        footer {
-            background-color: pink;
-            color: black;
-            padding: 1em 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-        }
-        footer a {
-            color: black;
-            text-decoration: none;
-            margin-top: 10px;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -73,50 +19,68 @@
     </header>
     <main>
         <h2>Our Services</h2>
-        <div class="service" onclick="bookService('Manicure')">
-            <h3>Manicure</h3>
-            <p>A simple manicure to pamper your natural nails. Add designs for $5!</p>
-            <p>$20.00 | 45 mins</p>
+        <div class="service">
+            <a href="bookings.html?service=Manicure">
+                <h3>Manicure</h3>
+                <p>A simple manicure to pamper your natural nails. Add designs for $5!</p>
+                <p>$20.00 | 45 mins</p>
+            </a>
         </div>
-        <div class="service" onclick="bookService('Long Freestyle Set')">
-            <h3>Long Freestyle Set</h3>
-            <p>Full creative control on your nails with inspiration pictures allowed.</p>
-            <p>$50.00 | 1 hr 45 mins</p>
+        <div class="service">
+            <a href="bookings.html?service=Long Freestyle Set">
+                <h3>Long Freestyle Set</h3>
+                <p>Full creative control on your nails with inspiration pictures allowed.</p>
+                <p>$50.00 | 1 hr 45 mins</p>
+            </a>
         </div>
-        <div class="service" onclick="bookService('Medium Freestyle Set')">
-            <h3>Medium Freestyle Set</h3>
-            <p>Perfect for unique designs based on inspiration pictures.</p>
-            <p>$45.00 | 1 hr 30 mins</p>
+        <div class="service">
+            <a href="bookings.html?service=Medium Freestyle Set">
+                <h3>Medium Freestyle Set</h3>
+                <p>Perfect for unique designs based on inspiration pictures.</p>
+                <p>$45.00 | 1 hr 30 mins</p>
+            </a>
         </div>
-        <div class="service" onclick="bookService('XL Acrylic Set/Gel Set')">
-            <h3>XL Acrylic Set/Gel Set</h3>
-            <p>Long, classy nails with optional charms for $5 each.</p>
-            <p>$50.00 | 2 hrs</p>
+        <div class="service">
+            <a href="bookings.html?service=XL Acrylic Set/Gel Set">
+                <h3>XL Acrylic Set/Gel Set</h3>
+                <p>Long, classy nails with optional charms for $5 each.</p>
+                <p>$50.00 | 2 hrs</p>
+            </a>
         </div>
-        <div class="service" onclick="bookService('XL Freestyle Set')">
-            <h3>XL Freestyle Set</h3>
-            <p>Creative freedom with inspiration pictures allowed.</p>
-            <p>$55.00 | 2 hrs</p>
+        <div class="service">
+            <a href="bookings.html?service=XL Freestyle Set">
+                <h3>XL Freestyle Set</h3>
+                <p>Creative freedom with inspiration pictures allowed.</p>
+                <p>$55.00 | 2 hrs</p>
+            </a>
         </div>
-        <div class="service" onclick="bookService('Short Freestyle Set')">
-            <h3>Short Freestyle Set</h3>
-            <p>Simple, cute, and classy designs with creative freedom.</p>
-            <p>$40.00 | 1 hr 30 mins</p>
+        <div class="service">
+            <a href="bookings.html?service=Short Freestyle Set">
+                <h3>Short Freestyle Set</h3>
+                <p>Simple, cute, and classy designs with creative freedom.</p>
+                <p>$40.00 | 1 hr 30 mins</p>
+            </a>
         </div>
-        <div class="service" onclick="bookService('Medium Acrylic/Gel X Set')">
-            <h3>Medium Acrylic/Gel X Set</h3>
-            <p>Classy and cute look, with optional charms for $5 each.</p>
-            <p>$25.00 | 1 hr 30 mins</p>
+        <div class="service">
+            <a href="bookings.html?service=Medium Acrylic/Gel X Set">
+                <h3>Medium Acrylic/Gel X Set</h3>
+                <p>Classy and cute look, with optional charms for $5 each.</p>
+                <p>$25.00 | 1 hr 30 mins</p>
+            </a>
         </div>
-        <div class="service" onclick="bookService('Short Acrylic/Gel Set')">
-            <h3>Short Acrylic/Gel Set</h3>
-            <p>Classy, cute nails with optional charms for $5 each.</p>
-            <p>$20.00 | 1 hr 30 mins</p>
+        <div class="service">
+            <a href="bookings.html?service=Short Acrylic/Gel Set">
+                <h3>Short Acrylic/Gel Set</h3>
+                <p>Classy, cute nails with optional charms for $5 each.</p>
+                <p>$20.00 | 1 hr 30 mins</p>
+            </a>
         </div>
-        <div class="service" onclick="bookService('Long Acrylic/Gel X Set')">
-            <h3>Long Acrylic/Gel X Set</h3>
-            <p>Classy and long, with optional charms for $5 each.</p>
-            <p>$35.00 | 1 hr 30 mins</p>
+        <div class="service">
+            <a href="bookings.html?service=Long Acrylic/Gel X Set">
+                <h3>Long Acrylic/Gel X Set</h3>
+                <p>Classy and long, with optional charms for $5 each.</p>
+                <p>$35.00 | 1 hr 30 mins</p>
+            </a>
         </div>
     </main>
     <footer>
@@ -127,4 +91,3 @@
     </footer>
 </body>
 </html>
-
