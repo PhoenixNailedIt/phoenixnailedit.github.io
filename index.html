@@ -19,16 +19,24 @@
             padding: 1em 0;
         }
         nav {
-            margin-top: 10px;
+            margin-top: 20px;
         }
         nav a {
             color: black;
-            margin: 0 15px;
+            font-size: 1.2em;
             text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
+            margin: 0 20px;
         }
-        nav a:hover {
+        main {
+            padding: 2em;
+        }
+        .service {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid pink;
+            display: inline-block;
+            cursor: pointer;
+            background-color: black;
             color: pink;
         }
         footer {
@@ -39,12 +47,13 @@
             width: 100%;
             bottom: 0;
         }
-    </style>
-    <script>
-        function bookService(service) {
-            window.location.href = 'booking.html?service=' + encodeURIComponent(service);
+        .about {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: pink;
+            color: black;
         }
-    </script>
+    </style>
 </head>
 <body>
     <header>
@@ -52,9 +61,15 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="my-services.html">My Services</a>
-            <a href="contact.html">Contact</a>
+            <a href="bookings.html">Book Now</a>
         </nav>
     </header>
+    <main>
+        <h2>Our Services</h2>
+        <div class="service" onclick="window.location.href='bookings.html'">Manicure</div>
+        <div class="service" onclick="window.location.href='bookings.html'">Pedicure</div>
+        <div class="service" onclick="window.location.href='bookings.html'">Acrylic Nails</div>
+    </main>
     <footer>
         <p>&copy; 2025 PhoenixNailedIt</p>
     </footer>

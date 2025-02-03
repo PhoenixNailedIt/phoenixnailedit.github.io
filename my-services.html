@@ -12,9 +12,6 @@
             text-align: center;
             background-color: black;
             color: pink;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
         header {
             background-color: pink;
@@ -22,20 +19,15 @@
             padding: 1em 0;
         }
         nav {
-            margin-top: 10px;
+            margin-top: 20px;
         }
         nav a {
             color: black;
-            margin: 0 15px;
+            font-size: 1.2em;
             text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: pink;
+            margin: 0 20px;
         }
         main {
-            flex: 1;
             padding: 2em;
         }
         .service {
@@ -43,112 +35,45 @@
             padding: 15px;
             border: 1px solid pink;
             display: inline-block;
+            cursor: pointer;
             background-color: black;
             color: pink;
-            width: 300px;
-            text-align: left;
-        }
-        .book-btn {
-            display: block;
-            margin-top: 10px;
-            padding: 8px 15px;
-            background-color: pink;
-            color: black;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            width: 100%;
-        }
-        .book-btn:hover {
-            background-color: white;
         }
         footer {
             background-color: pink;
             color: black;
             padding: 1em 0;
-            text-align: center;
-            margin-top: auto;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .about {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: pink;
+            color: black;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>PhoenixNailedIt - My Services</h1>
+        <h1>PhoenixNailedIt</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="my-services.html">My Services</a>
-            <a href="contact.html">Contact</a>
+            <a href="bookings.html">Book Now</a>
         </nav>
     </header>
     <main>
         <h2>Our Services</h2>
-
-        <div class="service">
-            <h3>Manicure</h3>
-            <p>A manicure is something simple being done to your natural nails. Designs etc is $5 added on to your total <3.</p>
-            <p><strong>$20.00</strong> | 45 mins</p>
-            <button class="book-btn">Book Now</button>
-        </div>
-
-        <div class="service">
-            <h3>Long Freestyle Set</h3>
-            <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before.</p>
-            <p><strong>$50.00</strong> | 1 hr 45 mins</p>
-            <button class="book-btn">Book Now</button>
-        </div>
-
-        <div class="service">
-            <h3>Medium Freestyle Set</h3>
-            <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before.</p>
-            <p><strong>$45.00</strong> | 1 hr 30 mins</p>
-            <button class="book-btn">Book Now</button>
-        </div>
-
-        <div class="service">
-            <h3>XL Acrylic/Gel Set</h3>
-            <p>Perfect if you want a classy & cute look🎀. Please be aware that these nails are very long therefore they will take longer.</p>
-            <p><strong>$50.00</strong> | 2 hrs</p>
-            <button class="book-btn">Book Now</button>
-        </div>
-
-        <div class="service">
-            <h3>XL Freestyle Set</h3>
-            <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before.</p>
-            <p><strong>$55.00</strong> | 2 hrs</p>
-            <button class="book-btn">Book Now</button>
-        </div>
-
-        <div class="service">
-            <h3>Short Freestyle Set</h3>
-            <p>This freestyle set gives me the opportunity to try new ideas on your nails and have full creative control.</p>
-            <p><strong>$40.00</strong> | 1 hr 30 mins</p>
-            <button class="book-btn">Book Now</button>
-        </div>
-
-        <div class="service">
-            <h3>Medium Acrylic/Gel X Set</h3>
-            <p>This medium acrylic set is perfect if you want a classy & cute look🎀.</p>
-            <p><strong>$25.00</strong> | 1 hr 30 mins</p>
-            <button class="book-btn">Book Now</button>
-        </div>
-
-        <div class="service">
-            <h3>Short Acrylic/Gel Set</h3>
-            <p>This short acrylic set is perfect if you want a classy & cute look🎀.</p>
-            <p><strong>$20.00</strong> | 1 hr 30 mins</p>
-            <button class="book-btn">Book Now</button>
-        </div>
-
-        <div class="service">
-            <h3>Long Acrylic/Gel X Set</h3>
-            <p>Any charms added on will be $5 each which will add onto your final total <3.</p>
-            <p><strong>$35.00</strong> | 1 hr 30 mins</p>
-            <button class="book-btn">Book Now</button>
+        <div class="service" onclick="window.location.href='bookings.html'">Manicure - $20</div>
+        <div class="service" onclick="window.location.href='bookings.html'">Pedicure - $25</div>
+        <div class="service" onclick="window.location.href='bookings.html'">Acrylic Nails - $50</div>
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Welcome to PhoenixNailedIt! I am passionate about nail art and dedicated to providing top-notch nail care services. Come get pampered and leave with nails that make a statement!</p>
         </div>
     </main>
-
     <footer>
         <p>&copy; 2025 PhoenixNailedIt</p>
     </footer>
