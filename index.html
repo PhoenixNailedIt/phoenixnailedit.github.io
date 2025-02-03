@@ -12,6 +12,9 @@
             text-align: center;
             background-color: black;
             color: pink;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: pink;
@@ -29,14 +32,22 @@
         }
         main {
             padding: 2em;
+            flex-grow: 1;
         }
         footer {
             background-color: pink;
             color: black;
             padding: 1em 0;
-            position: absolute;
-            width: 100%;
+            position: relative;
             bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        footer a {
+            color: black;
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
         }
     </style>
 </head>
@@ -57,6 +68,9 @@
     </main>
     <footer>
         <p>&copy; 2025 PhoenixNailedIt</p>
+        <a href="https://www.instagram.com/phoenixnailedit_/" target="_blank">
+            Follow us on Instagram!
+        </a>
     </footer>
 </body>
 </html>
