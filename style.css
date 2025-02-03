@@ -53,7 +53,7 @@ footer {
     background-color: pink;
     color: black;
     padding: 0.5em 0; /* Reduced the footer height */
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -63,4 +63,13 @@ footer a {
     font-size: 1.5em;
     text-decoration: none;
 }
+
+footer img {
+    position: absolute;
+    bottom: 10px;
+    left: 10px; /* Switch image to the bottom left */
+    width: 40px; /* Adjust the size of the Hello Kitty image */
+    height: auto;
+}
+
 
