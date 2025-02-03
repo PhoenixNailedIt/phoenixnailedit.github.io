@@ -12,6 +12,9 @@
             text-align: center;
             background-color: black;
             color: pink;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: pink;
@@ -32,6 +35,7 @@
             color: pink;
         }
         main {
+            flex: 1;
             padding: 2em;
         }
         .service {
@@ -41,14 +45,31 @@
             display: inline-block;
             background-color: black;
             color: pink;
+            width: 300px;
+            text-align: left;
+        }
+        .book-btn {
+            display: block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: pink;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+        }
+        .book-btn:hover {
+            background-color: white;
         }
         footer {
             background-color: pink;
             color: black;
             padding: 1em 0;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            text-align: center;
+            margin-top: auto;
         }
     </style>
 </head>
@@ -63,52 +84,71 @@
     </header>
     <main>
         <h2>Our Services</h2>
+
         <div class="service">
             <h3>Manicure</h3>
             <p>A manicure is something simple being done to your natural nails. Designs etc is $5 added on to your total <3.</p>
-            <p><strong>$20.00</strong><br>45 mins</p>
+            <p><strong>$20.00</strong> | 45 mins</p>
+            <button class="book-btn">Book Now</button>
         </div>
+
         <div class="service">
             <h3>Long Freestyle Set</h3>
-            <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before. Inspiration pictures can be used as well for reference <3.</p>
-            <p><strong>$50.00</strong><br>1 hr 45 mins</p>
+            <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before.</p>
+            <p><strong>$50.00</strong> | 1 hr 45 mins</p>
+            <button class="book-btn">Book Now</button>
         </div>
+
         <div class="service">
             <h3>Medium Freestyle Set</h3>
-            <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before. Inspiration pictures can be used as well for reference <3.</p>
-            <p><strong>$45.00</strong><br>1 hr 30 mins</p>
+            <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before.</p>
+            <p><strong>$45.00</strong> | 1 hr 30 mins</p>
+            <button class="book-btn">Book Now</button>
         </div>
+
         <div class="service">
             <h3>XL Acrylic/Gel Set</h3>
-            <p>This XL acrylic set is perfect if you want a classy & cute look🎀. Please be aware that these nails are very long therefore they will take longer. Any charms added on will be $5 each which will add onto your final total <3.</p>
-            <p><strong>$50.00</strong><br>2 hrs</p>
+            <p>Perfect if you want a classy & cute look🎀. Please be aware that these nails are very long therefore they will take longer.</p>
+            <p><strong>$50.00</strong> | 2 hrs</p>
+            <button class="book-btn">Book Now</button>
         </div>
+
         <div class="service">
             <h3>XL Freestyle Set</h3>
-            <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before. Inspiration pictures can be used as well for reference <3.</p>
-            <p><strong>$55.00</strong><br>2 hrs</p>
+            <p>This set is perfect if you want me to have full creative control and don’t mind getting a design you haven’t done before.</p>
+            <p><strong>$55.00</strong> | 2 hrs</p>
+            <button class="book-btn">Book Now</button>
         </div>
+
         <div class="service">
             <h3>Short Freestyle Set</h3>
-            <p>This freestyle set gives me the opportunity to try new ideas on your nails and have full creative control especially if you want something cute, simple, and classy <3. Inspiration pictures can be used as well for reference <3.</p>
-            <p><strong>$40.00</strong><br>1 hr 30 mins</p>
+            <p>This freestyle set gives me the opportunity to try new ideas on your nails and have full creative control.</p>
+            <p><strong>$40.00</strong> | 1 hr 30 mins</p>
+            <button class="book-btn">Book Now</button>
         </div>
+
         <div class="service">
             <h3>Medium Acrylic/Gel X Set</h3>
-            <p>This medium acrylic set is perfect if you want a classy & cute look🎀. Any charms added on will be $5 each which will add onto your final total <3.</p>
-            <p><strong>$25.00</strong><br>1 hr 30 mins</p>
+            <p>This medium acrylic set is perfect if you want a classy & cute look🎀.</p>
+            <p><strong>$25.00</strong> | 1 hr 30 mins</p>
+            <button class="book-btn">Book Now</button>
         </div>
+
         <div class="service">
             <h3>Short Acrylic/Gel Set</h3>
-            <p>This short acrylic set is perfect if you want a classy & cute look🎀. Any charms added on will be $5 each which will add onto your final total <3.</p>
-            <p><strong>$20.00</strong><br>1 hr 30 mins</p>
+            <p>This short acrylic set is perfect if you want a classy & cute look🎀.</p>
+            <p><strong>$20.00</strong> | 1 hr 30 mins</p>
+            <button class="book-btn">Book Now</button>
         </div>
+
         <div class="service">
             <h3>Long Acrylic/Gel X Set</h3>
             <p>Any charms added on will be $5 each which will add onto your final total <3.</p>
-            <p><strong>$35.00</strong><br>1 hr 30 mins</p>
+            <p><strong>$35.00</strong> | 1 hr 30 mins</p>
+            <button class="book-btn">Book Now</button>
         </div>
     </main>
+
     <footer>
         <p>&copy; 2025 PhoenixNailedIt</p>
     </footer>
