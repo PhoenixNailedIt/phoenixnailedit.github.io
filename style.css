@@ -22,7 +22,7 @@ header {
 
 nav {
     margin-top: 20px;
-    font-family: 'Damion', cursive;  /* Damion font for the nav */
+    font-family: 'Damion', cursive; /* Use Damion font for the nav */
 }
 
 nav a {
@@ -35,7 +35,7 @@ nav a {
 /* Main Content */
 main {
     padding: 2em;
-    flex: 1;  /* Allows main to expand so footer stays at the bottom */
+    flex: 1;  /* Ensures main content expands and pushes footer to the bottom */
 }
 
 /* My Services Page – Service Button Styling */
@@ -48,7 +48,7 @@ main {
     background-color: pink;
     color: black;
     padding: 15px;
-    margin: 10px auto; /* centers the button */
+    margin: 10px auto; /* Centers the button */
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -62,7 +62,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: pink; /* Keeps the footer pink */
+    background-color: pink;  /* Keeps the footer pink */
     color: black;
     padding: 0.5em 0;  /* Reduced footer height */
     position: relative;
@@ -89,14 +89,14 @@ footer a img {
     height: 30px;
 }
 
-/* Hello Kitty Image in Footer using a Pseudo-Element */
+/* Hello Kitty Image in Footer via Pseudo-Element */
 footer::after {
     content: '';
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fhello-kitty-wall-decal-sticker-sanrio-png-clipart-adventures-of-hello-kitty-friends-advertising-an--332633122481676155%2F&psig=AOvVaw1MFK27VhAwbGwMzHWsaKO_&ust=1738678302061000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOjU6sTXp4sDFQAAAAAdAAAAABAE') no-repeat;
-    background-size: 40px 40px;
+    background: url('https://i.pinimg.com/474x/8a/a1/7d/8aa17dc36b43e86afdd29f4f6a7a64fa.jpg') no-repeat;
+    background-size: contain;
     width: 40px;
     height: 40px;
 }
