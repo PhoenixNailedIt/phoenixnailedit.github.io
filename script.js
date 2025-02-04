@@ -1,31 +1,34 @@
-// Function to animate falling kitties
-function animateFallingKitties() {
-  // Create an array of images that will fall
-  const fallingKittyImages = [
-    "images/nerdy kitty.png",
-    "images/nerdy kitty.png",
-    "images/nerdy kitty.png",
-    "images/nerdy kitty.png",
-    "images/nerdy kitty.png",
-  ];
+document.addEventListener("DOMContentLoaded", function () {
+    const kittyImageSrc = "images/nerdy kitty.png";
 
-  fallingKittyImages.forEach(imageSrc => {
-    // Create a new img element
-    const imgElement = document.createElement('img');
-    imgElement.src = imageSrc;
-    imgElement.alt = "Falling Kitty";
-    imgElement.classList.add('falling-image');
+    function createFallingKitty() {
+        const kitty = document.createElement("img");
+        kitty.src = kittyImageSrc;
+        kitty.style.position = "fixed";
+        kitty.style.width = "50px"; // Adjust size as needed
+        kitty.style.height = "auto";
+        kitty.style.top = "-50px"; // Start above the screen
+        kitty.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+        kitty.style.opacity = "0.8"; // Slight transparency
+        kitty.style.pointerEvents = "none";
+        kitty.style.zIndex = "-1"; // Behind the content
 
-    // Append the image to the body
-    document.body.appendChild(imgElement);
+        document.body.appendChild(kitty);
 
-    // Set animation for each image
-    imgElement.style.animation = 'fall 5s infinite';
-  });
-}
+        let speed = Math.random() * 3 + 2; // Random fall speed
+        let rotate = Math.random() * 360; // Random rotation
 
-// Start the falling kitties animation when the page loads
-window.onload = function() {
-  animateFallingKitties();
-};
+        let fallInterval = setInterval(() => {
+            let currentTop = parseFloat(kitty.style.top);
+            kitty.style.top = currentTop + speed + "px";
+            kitty.style.transform = `rotate(${rotate}deg)`;
 
+            if (currentTop > window.innerHeight) {
+                clearInterval(fallInterval);
+                kitty.remove(); // Remove when off-screen
+            }
+        }, 30);
+    }
+
+    setInterval(createFallingKitty, 500); // Create new Hello Kitty every 0.5s
+});

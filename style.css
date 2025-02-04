@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-color: black;
     color: pink;
+    /* Default descriptive text uses Gorditas */
     font-family: 'Gorditas', sans-serif;
     text-align: center;
     display: flex;
@@ -18,12 +19,12 @@ header {
     background-color: pink;
     color: black;
     padding: 1em 0;
-    font-family: 'Damion', cursive;
+    font-family: 'Damion', cursive; /* Titles use Damion */
 }
 
 nav {
     margin-top: 20px;
-    font-family: 'Damion', cursive;
+    font-family: 'Damion', cursive; /* Navigation uses Damion */
 }
 
 nav a {
@@ -33,47 +34,57 @@ nav a {
     margin: 0 20px;
 }
 
-/* Service Boxes */
+/* Main Content */
+main {
+    padding: 2em;
+    flex: 1;
+}
+
+/* My Services – Service Box Styling */
 .service {
-    background-color: pink;
+    background-color: pink;      /* Pink box */
     border: 1px solid black;
     padding: 15px;
     margin: 20px auto;
     width: 80%;
     max-width: 500px;
     border-radius: 5px;
-    color: black;
+    transition: background-color 0.3s;
+}
+
+/* Lighten the pink on hover */
+.service:hover {
+    background-color: #ffb6c1; /* A lighter pink shade */
 }
 
 /* Service Titles (Damion) */
 .service h3 {
     font-family: 'Damion', cursive;
     margin: 0 0 10px 0;
+    color: black; /* Change title color to black */
 }
 
 /* Service Descriptions (Gorditas) */
 .service p {
     font-family: 'Gorditas', sans-serif;
     margin: 5px 0;
+    color: black; /* Change description text color to black */
 }
 
-/* Falling Kitty Images */
-.falling-image {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -100px;
-    width: 80px;
-    animation: fall 5s infinite;
+/* Button inside each service */
+button {
+    font-family: 'Gorditas', sans-serif;
+    background-color: black;
+    color: pink;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-
-@keyframes fall {
-    0% {
-        top: -100px;
-    }
-    100% {
-        top: 100%;
-    }
+button:hover {
+    background-color: #333;
 }
 
 /* Footer */
@@ -99,9 +110,11 @@ footer a {
     font-size: 1.2em;
 }
 
+/* Instagram Button Image in Footer */
 footer a img {
     width: 30px;
     height: 30px;
 }
+
 
 
