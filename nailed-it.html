@@ -16,6 +16,19 @@
       margin: 10px 0;
       border-radius: 8px;
       color: black;
+      position: relative;
+    }
+
+    /* Set Hello Kitty image behind the text */
+    .testimonial::before {
+      content: url('images/nerdy kitty.png');
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      opacity: 0.5;
+      z-index: -1;
     }
   </style>
 </head>
@@ -53,6 +66,8 @@
       </a>
     </p>
   </footer>
+
+  <script src="script.js"></script> <!-- Link to external script -->
 </body>
 </html>
 
