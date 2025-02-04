@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const kittyImageSrc = "images/nerdy kitty.png"; // Updated image path
+    const kittyImageSrc = "images/nerdy kitty.png";
 
     function createFallingKitty() {
         const kitty = document.createElement("img");
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         kitty.style.left = `${Math.random() * 100}vw`; // Random horizontal position
         kitty.style.opacity = "0.8"; // Slight transparency
         kitty.style.pointerEvents = "none";
-        kitty.style.zIndex = "-1"; // Behind content
+        kitty.style.zIndex = "-1"; // Behind the content
 
         document.body.appendChild(kitty);
 
@@ -32,3 +32,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(createFallingKitty, 500); // Create new Hello Kitty every 0.5s
 });
+
+
