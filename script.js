@@ -32,3 +32,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(createFallingKitty, 500); // Create new Hello Kitty every 0.5s
 });
+
