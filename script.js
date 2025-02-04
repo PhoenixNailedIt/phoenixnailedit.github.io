@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const kittyImageUrl = "https://www.citypng.com/public/uploads/preview/fancy-hello-kitty-face-with-glasses-transparent-background-735811696682788owlz6dsmsb.png?v=2025020209";
+    const kittyImageSrc = "images/nerdy kitty.png"; // Updated image path
 
     function createFallingKitty() {
         const kitty = document.createElement("img");
-        kitty.src = kittyImageUrl;
+        kitty.src = kittyImageSrc;
         kitty.style.position = "fixed";
         kitty.style.width = "50px"; // Adjust size as needed
         kitty.style.height = "auto";
