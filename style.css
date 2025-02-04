@@ -50,11 +50,11 @@ main {
     max-width: 500px;
     border-radius: 5px;
     transition: background-color 0.3s;
-    color: black;  /* Set text inside the box to black */
 }
 
+/* Lighten the pink on hover */
 .service:hover {
-    background-color: #ffb6c1; /* A lighter pink shade on hover */
+    background-color: #ffb6c1; /* A lighter pink shade */
 }
 
 /* Service Titles (Damion) */
@@ -83,6 +83,29 @@ button {
 }
 button:hover {
     background-color: #333;
+}
+
+/* FAQ and Testimonial Boxes Styling */
+.faq, .testimonial {
+    background-color: pink;  /* Pink background */
+    padding: 20px;  /* Padding around text */
+    margin-bottom: 20px;  /* Space between boxes */
+    display: inline-block;  /* Allow inline block layout */
+    width: 100%;  /* Default to full width */
+    max-width: 320px;  /* Limit the max width to 320px */
+    text-align: left;  /* Align text to the left */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+}
+
+/* FAQ and Testimonial Headers */
+.faq h3, .testimonial h3 {
+    color: black;  /* Black text color for headers */
+}
+
+/* FAQ and Testimonial Paragraphs */
+.faq p, .testimonial p {
+    color: black;  /* Black text color for paragraphs */
 }
 
 /* Footer */

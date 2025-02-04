@@ -1,36 +1,33 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const kittyImageSrc = "images/nerdy kitty.png";
-
-    function createFallingKitty() {
-        const kitty = document.createElement("img");
-        kitty.src = kittyImageSrc;
-        kitty.style.position = "fixed";
-        kitty.style.width = "50px"; // Adjust size as needed
-        kitty.style.height = "auto";
-        kitty.style.top = "-50px"; // Start above the screen
-        kitty.style.left = `${Math.random() * 100}vw`; // Random horizontal position
-        kitty.style.opacity = "0.8"; // Slight transparency
-        kitty.style.pointerEvents = "none";
-        kitty.style.zIndex = "-1"; // Behind the content
-
-        document.body.appendChild(kitty);
-
-        let speed = Math.random() * 3 + 2; // Random fall speed
-        let rotate = Math.random() * 360; // Random rotation
-
-        let fallInterval = setInterval(() => {
-            let currentTop = parseFloat(kitty.style.top);
-            kitty.style.top = currentTop + speed + "px";
-            kitty.style.transform = `rotate(${rotate}deg)`;
-
-            if (currentTop > window.innerHeight) {
-                clearInterval(fallInterval);
-                kitty.remove(); // Remove when off-screen
-            }
-        }, 30);
-    }
-
-    setInterval(createFallingKitty, 500); // Create new Hello Kitty every 0.5s
+// Add Hello Kitty image on page load and apply falling animation
+document.addEventListener('DOMContentLoaded', function () {
+    let helloKitty = document.createElement('img');  // Create the image element
+    helloKitty.src = 'images/nerdy kitty.png';  // Set the image source
+    helloKitty.classList.add('falling-kitty');  // Add class for animation
+    document.body.appendChild(helloKitty);  // Append image to the body
 });
+
+// Add CSS styles for the Hello Kitty animation
+const style = document.createElement('style');  // Create a <style> tag
+style.textContent = `
+/* Hello Kitty falling animation */
+.falling-kitty {
+    position: absolute;  /* Position it absolutely within the body */
+    top: -100px;  /* Start above the page */
+    left: 50%;  /* Center horizontally */
+    width: 150px;  /* Set width */
+    height: auto;  /* Maintain aspect ratio */
+    z-index: -1;  /* Ensure it is behind other elements */
+    animation: fall 3s infinite linear;  /* Apply falling animation */
+}
+
+/* Keyframes for the falling animation */
+@keyframes fall {
+    0% { top: -100px; opacity: 1; }  /* Start above the page with full opacity */
+    100% { top: 100%; opacity: 0; }  /* Move to the bottom and fade out */
+}
+`;
+
+// Append the styles to the <head> section
+document.head.appendChild(style);
 
 
