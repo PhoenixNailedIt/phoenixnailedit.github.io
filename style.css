@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Gorditas:wght@400;700&display=swap');
+
 /* Global Styles */
 body {
     margin: 0;
     padding: 0;
     background-color: black;
     color: pink;
-    /* Default font for descriptive text */
+    /* Default descriptive text uses Gorditas */
     font-family: 'Gorditas', sans-serif;
     text-align: center;
     display: flex;
@@ -17,8 +19,7 @@ header {
     background-color: pink;
     color: black;
     padding: 1em 0;
-    /* Titles (header) use Damion */
-    font-family: 'Damion', cursive;
+    font-family: 'Damion', cursive; /* Titles use Damion */
 }
 
 nav {
@@ -39,29 +40,49 @@ main {
     flex: 1;
 }
 
-/* Service Section (for My Services page) */
+/* My Services – Service Box Styling */
 .service {
-    margin-bottom: 20px;
-    border: 1px solid pink;
+    background-color: pink;      /* Pink box */
+    border: 1px solid black;
     padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
     border-radius: 5px;
-    background-color: black;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
     transition: background-color 0.3s;
 }
 
-/* Service Titles use Damion */
+/* Lighten the pink on hover */
+.service:hover {
+    background-color: #ffb6c1; /* A lighter pink shade */
+}
+
+/* Service Titles (Damion) */
 .service h3 {
     font-family: 'Damion', cursive;
     margin: 0 0 10px 0;
 }
 
-/* Service Descriptions use Gorditas */
+/* Service Descriptions (Gorditas) */
 .service p {
     font-family: 'Gorditas', sans-serif;
     margin: 5px 0;
+}
+
+/* Button inside each service */
+button {
+    font-family: 'Gorditas', sans-serif;
+    background-color: black;
+    color: pink;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #333;
 }
 
 /* Footer */
@@ -71,7 +92,6 @@ footer {
     padding: 0.5em 0;
     position: relative;
     width: 100%;
-    /* Footer text uses Gorditas */
     font-family: 'Gorditas', sans-serif;
     text-align: center;
 }
