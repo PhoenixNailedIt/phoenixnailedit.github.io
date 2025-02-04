@@ -1,33 +1,16 @@
-// Add Hello Kitty image on page load and apply falling animation
-document.addEventListener('DOMContentLoaded', function () {
-    let helloKitty = document.createElement('img');  // Create the image element
-    helloKitty.src = 'images/nerdy kitty.png';  // Set the image source
-    helloKitty.classList.add('falling-kitty');  // Add class for animation
-    document.body.appendChild(helloKitty);  // Append image to the body
+window.addEventListener('DOMContentLoaded', (event) => {
+    // Select all falling elements (images)
+    const fallingImages = document.querySelectorAll('.falling-image');
+    
+    // Randomize the starting positions for multiple images
+    fallingImages.forEach(image => {
+        const startPosition = Math.random() * window.innerWidth; // Randomize horizontal position
+        const animationDuration = Math.random() * 5 + 3; // Randomize the falling speed (between 3s and 8s)
+        const delayTime = Math.random() * 5; // Randomize start delay for each image
+
+        image.style.left = `${startPosition}px`;
+        image.style.animation = `falling ${animationDuration}s linear infinite ${delayTime}s`;
+    });
 });
-
-// Add CSS styles for the Hello Kitty animation
-const style = document.createElement('style');  // Create a <style> tag
-style.textContent = `
-/* Hello Kitty falling animation */
-.falling-kitty {
-    position: absolute;  /* Position it absolutely within the body */
-    top: -100px;  /* Start above the page */
-    left: 50%;  /* Center horizontally */
-    width: 150px;  /* Set width */
-    height: auto;  /* Maintain aspect ratio */
-    z-index: -1;  /* Ensure it is behind other elements */
-    animation: fall 3s infinite linear;  /* Apply falling animation */
-}
-
-/* Keyframes for the falling animation */
-@keyframes fall {
-    0% { top: -100px; opacity: 1; }  /* Start above the page with full opacity */
-    100% { top: 100%; opacity: 0; }  /* Move to the bottom and fade out */
-}
-`;
-
-// Append the styles to the <head> section
-document.head.appendChild(style);
 
 

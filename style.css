@@ -6,7 +6,6 @@ body {
     padding: 0;
     background-color: black;
     color: pink;
-    /* Default descriptive text uses Gorditas */
     font-family: 'Gorditas', sans-serif;
     text-align: center;
     display: flex;
@@ -19,12 +18,12 @@ header {
     background-color: pink;
     color: black;
     padding: 1em 0;
-    font-family: 'Damion', cursive; /* Titles use Damion */
+    font-family: 'Damion', cursive;
 }
 
 nav {
     margin-top: 20px;
-    font-family: 'Damion', cursive; /* Navigation uses Damion */
+    font-family: 'Damion', cursive;
 }
 
 nav a {
@@ -40,11 +39,11 @@ main {
     flex: 1;
 }
 
-/* My Services – Service Box Styling */
-.service {
-    background-color: pink;      /* Pink box */
+/* FAQ – Box Styling */
+.faq {
+    background-color: pink;
     border: 1px solid black;
-    padding: 15px;
+    padding: 20px;
     margin: 20px auto;
     width: 80%;
     max-width: 500px;
@@ -53,59 +52,20 @@ main {
 }
 
 /* Lighten the pink on hover */
-.service:hover {
-    background-color: #ffb6c1; /* A lighter pink shade */
+.faq:hover {
+    background-color: #ffb6c1;
 }
 
-/* Service Titles (Damion) */
-.service h3 {
+/* FAQ Titles (Damion) */
+.faq h3 {
     font-family: 'Damion', cursive;
     margin: 0 0 10px 0;
 }
 
-/* Service Descriptions (Gorditas) */
-.service p {
+/* FAQ Descriptions (Gorditas) */
+.faq p {
     font-family: 'Gorditas', sans-serif;
     margin: 5px 0;
-}
-
-/* Button inside each service */
-button {
-    font-family: 'Gorditas', sans-serif;
-    background-color: black;
-    color: pink;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-button:hover {
-    background-color: #333;
-}
-
-/* FAQ and Testimonial Boxes Styling */
-.faq, .testimonial {
-    background-color: pink;  /* Pink background */
-    padding: 20px;  /* Padding around text */
-    margin-bottom: 20px;  /* Space between boxes */
-    display: inline-block;  /* Allow inline block layout */
-    width: 100%;  /* Default to full width */
-    max-width: 320px;  /* Limit the max width to 320px */
-    text-align: left;  /* Align text to the left */
-    border-radius: 8px;  /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
-}
-
-/* FAQ and Testimonial Headers */
-.faq h3, .testimonial h3 {
-    color: black;  /* Black text color for headers */
-}
-
-/* FAQ and Testimonial Paragraphs */
-.faq p, .testimonial p {
-    color: black;  /* Black text color for paragraphs */
 }
 
 /* Footer */
@@ -135,6 +95,28 @@ footer a {
 footer a img {
     width: 30px;
     height: 30px;
+}
+
+/* Falling Image Styling */
+.falling-image {
+    position: absolute;
+    top: -50px;
+    width: 50px;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    animation: falling 5s linear infinite;
+}
+
+@keyframes falling {
+    0% {
+        top: -50px;
+        opacity: 1;
+    }
+    100% {
+        top: 100vh;
+        opacity: 0;
+    }
 }
 
 

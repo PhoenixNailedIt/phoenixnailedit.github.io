@@ -9,28 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Damion&family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .faq {
-      background-color: pink;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
-      color: black;
-      position: relative;
-    }
-
-    /* Set Hello Kitty image behind the text */
-    .faq::before {
-      content: url('images/nerdy kitty.png');
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100px;
-      height: 100px;
-      opacity: 0.5;
-      z-index: -1;
-    }
-  </style>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -43,21 +22,28 @@
       <a href="nailed-it.html">Nailed It!</a>
     </nav>
   </header>
+
   <main>
     <h2>Frequently Asked Questions & Rules</h2>
-    <div class="faq">
+    <div class="faq-box">
       <h3>What types of payments do you accept?</h3>
       <p>We accept credit/debit cards, cash, and payments via PayPal.</p>
     </div>
-    <div class="faq">
+    <div class="faq-box">
       <h3>What is your cancellation policy?</h3>
       <p>If you need to cancel, please give at least 24 hours' notice to avoid a cancellation fee.</p>
     </div>
-    <div class="faq">
+    <div class="faq-box">
       <h3>Do you offer gift cards?</h3>
       <p>Yes, gift cards are available for purchase. Contact us to get one!</p>
     </div>
+    
+    <!-- Falling images -->
+    <img src="images/nerdy kitty.png" class="falling-image" alt="Falling Kitty">
+    <img src="images/nerdy kitty.png" class="falling-image" alt="Falling Kitty">
+    <img src="images/nerdy kitty.png" class="falling-image" alt="Falling Kitty">
   </main>
+
   <footer>
     <p>&copy; 2025 PhoenixNailedIt</p>
     <p>
@@ -66,8 +52,6 @@
       </a>
     </p>
   </footer>
-
-  <script src="script.js"></script> <!-- Link to external script -->
 </body>
 </html>
 
