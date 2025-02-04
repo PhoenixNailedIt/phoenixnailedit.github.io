@@ -50,11 +50,11 @@ main {
     max-width: 500px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    color: black;  /* Set text inside the box to black */
 }
 
-/* Lighten the pink on hover */
 .service:hover {
-    background-color: #ffb6c1; /* A lighter pink shade */
+    background-color: #ffb6c1; /* A lighter pink shade on hover */
 }
 
 /* Service Titles (Damion) */
@@ -113,5 +113,6 @@ footer a img {
     width: 30px;
     height: 30px;
 }
+
 
 
